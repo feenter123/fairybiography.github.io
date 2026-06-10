@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖精传记 Fairy Biography - 解密游戏 | 1-6合集 | 中文版下载 | PC</title>
+    <style>
+        /* --- 全局重置与基础样式 --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a; /* 深邃的暗夜蓝背景 */
+            color: #e2e8f0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+
+        /* --- 头部导航 (Header) --- */
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            background: rgba(15, 23, 42, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #c084fc; letter-spacing: 1px; }
+        .nav-links a { margin-left: 25px; font-size: 0.9rem; opacity: 0.8; }
+        .nav-links a:hover { opacity: 1; color: #c084fc; }
+
+        /* --- 核心内容区 (Main) --- */
+        main { flex: 1; padding: 60px 5%; max-width: 1200px; margin: 0 auto; width: 100%; }
+        
+        .hero-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        .preview-img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(192, 132, 252, 0.15);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .info-card h1 { font-size: 2.5rem; margin-bottom: 15px; background: linear-gradient(to right, #c084fc, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tags span { display: inline-block; background: rgba(192, 132, 252, 0.15); color: #c084fc; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; margin-right: 8px; margin-bottom: 15px;}
+        .desc { margin-bottom: 30px; opacity: 0.9; font-size: 1rem; }
+        
+        /* 动态生成的下载按钮 */
+        .dl-btn-container { margin-top: 20px; }
+        #download-link {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #a855f7, #6366f1);
+            color: white;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 25px rgba(168, 85, 247, 0.4);
+            cursor: pointer;
+        }
+        #download-link:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(168, 85, 247, 0.6); }
+
+        /* 游戏特色网格 */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+        }
+        .feature-item:hover { background: rgba(255, 255, 255, 0.06); transform: translateY(-5px); }
+        .feature-item h3 { color: #c084fc; margin-bottom: 10px; font-size: 1.2rem; }
+        .feature-item p { font-size: 0.9rem; opacity: 0.8; }
+
+        /* --- 尾部 (Footer) --- */
+        footer {
+            text-align: center;
+            padding: 30px 5%;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-top: 50px;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .hero-section { grid-template-columns: 1fr; text-align: center; }
+            .info-card h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 头部 -->
+    <header>
+        <div class="logo">GameTuan 游戏团</div>
+        <nav class="nav-links">
+            <a href="#">首页</a>
+            <a href="#">PC单机</a>
+            <a href="#">热门合集</a>
+            <a href="#">关于我们</a>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <main>
+        <section class="hero-section">
+            <!-- 请将下面的 src 替换为您的真实预览大图路径 -->
+            <img src="images/1.jpg" alt="妖精传记游戏预览图" class="preview-img">
+            
+            <div class="info-card">
+                <h1>妖精传记 Fairy Biography</h1>
+                <div class="tags">
+                    <span>益智解密</span>
+                    <span>找茬比拼</span>
+                    <span>1-6部全集</span>
+                    <span>官方中文</span>
+                    <span>PC版</span>
+                </div>
+                
+                <p class="desc">
+                    最近，一批曾被封印在上古绘卷中的妖精们逃走了，她们四处作恶，人间岌岌可危！作为绘卷的守护者，你必须重新将妖精们封印在绘卷内以确保人们的安全。来不及解释了，策马扬鞭立即出发吧！<br><br>
+                    在这场充满魔法与神秘的奇幻大陆冒险中，你将通过画笔将调皮捣蛋的精怪小姐姐围住，收回上古绘卷获得通关资格。随着关卡推进，解锁不同种类的精怪，窥探人类、狼人、吸血鬼等种族之间跌宕起伏的命运斗争。
+                </p>
+
+                <!-- 下载链接由JS动态生成，防止爬虫抓取 -->
+                <div class="dl-btn-container">
+                    <a id="download-link" target="_blank" rel="nofollow noopener">🚀 获取 1-6部 完整中文版</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="font-size: 1.8rem; margin-bottom: 10px;">✨ 游戏核心特色</h2>
+            <p style="opacity:0.7; margin-bottom: 20px;">极致考验观察力与专注力的视觉盛宴</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>🔍 沉浸式找茬比拼</h3>
+                    <p>比较两张精致的奇幻场景图片，找出隐藏的细微差异。每个关卡都有专属挑战，成功圈中即可解锁下一关，深入探索奇幻大陆的秘密。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>🎨 精美细腻的CG图鉴</h3>
+                    <p>唯美写实的画风搭配精良制作的CG。解锁全部关卡后，如同拼图般获得整张精美CG，享受极致的视觉体验。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📖 跌宕起伏的剧情</h3>
+                    <p>从高雅腹黑的邻国外交官到为了种族利益付出一切的人类首领艾琳达，错综复杂的角色互动为你打造充满想象力的世界观。</p>
+                </div>
+                <div class="feature-item">
+                    <h3>⚡ 轻松休闲的体验</h3>
+                    <p>操作简单无需复杂学习，新手也能快速上手。遇到困难？游戏内置一键跳过功能，让你毫无压力地享受解谜带来的成就感。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 尾部 -->
+    <footer>
+        <p>&copy; 2026 GameTuan 游戏团. 仅供学习交流，请支持正版游戏。</p>
+    </footer>
+
+    <!-- 核心防爬脚本：动态拼接下载链接 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 将链接拆分或使用Base64编码，彻底阻断正则爬虫
+            const encodedUrl = "aHR0cHM6Ly93d3cuZ2FtZXR1YW4udG9wLzMzMjAuaHRtbA=="; 
+            const downloadBtn = document.getElementById("download-link");
+            
+            if (downloadBtn && encodedUrl) {
+                try {
+                    const realUrl = atob(encodedUrl);
+                    downloadBtn.href = realUrl;
+                } catch(e) {
+                    console.error("链接解析失败");
+                }
+            }
+        });
+    </script>
+</body>
+</html>
